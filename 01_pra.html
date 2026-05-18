@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tadashi | Backend Engineer</title>
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div>
+                <h1>Tadashi</h1>
+                <p class="mono" style="color: var(--color-primary); font-size: 1rem; margin-top: 0.25rem;">Backend Systems Engineer</p>
+            </div>
+            <p class="intro-text">
+                안녕하세요. 복잡한 문제를 단순하게 풀고, 눈에 보이지 않는 견고한 설계를 만드는 6년 차 백엔드 엔지니어 Tadashi입니다. 대용량 트래픽 처리, 분산 아키텍처 설계, 데이터베이스 병목 개선에 깊은 관심을 두고 있으며, 시스템의 신뢰성과 운영 지속성을 가장 중요한 가치로 생각합니다.
+            </p>
+            <div class="profile-meta">
+                <span>Seoul, South Korea</span>
+                <span>00pjmoooo@gmail.com</span>
+                <span><a href="https://github.com/pjmoo" target="_blank">github.com/pjmoo</a></span>
+            </div>
+        </header>
+
+        <!-- Core Stack / Skills -->
+        <section>
+            <h2>/ Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Go (Golang)</li>
+                        <li>Java / Spring Boot</li>
+                        <li>TypeScript / Node.js</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>PostgreSQL (Query Opt.)</li>
+                        <li>MySQL / Aurora DB</li>
+                        <li>Redis (Caching, Pub/Sub)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Infra & DevOps</h3>
+                    <ul>
+                        <li>AWS (ECS, RDS, S3, VPC)</li>
+                        <li>Docker / Kubernetes</li>
+                        <li>CI/CD (GitHub Actions)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section>
+            <h2>/ Selected Projects</h2>
+            <div class="projects-list">
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-title">대용량 분산 트랜잭션 원장 시스템 구축</span>
+                        <span class="project-period">2024.03 - 2025.01</span>
+                    </div>
+                    <p class="project-desc">
+                        핀테크 서비스의 핵심 결제 및 송금 원장(Ledger) 시스템을 Go 언어로 재구축했습니다. 이벤트 소싱 패턴을 적용하여 데이터 정합성을 보장하고, 분산 트랜잭션 상황에서 이중 결제 방지를 위한 멱등성 필터를 최적화했습니다. DB 커넥션 병목을 해결하여 초당 트랜잭션 처리량(TPS)을 기존 대비 280% 향상했습니다.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Kafka</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">AWS ECS</span>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-title">실시간 위치 기반 차량 배차 엔진 개발</span>
+                        <span class="project-period">2022.08 - 2023.11</span>
+                    </div>
+                    <p class="project-desc">
+                        실시간으로 갱신되는 GPS 데이터를 기반으로 반경 내 최적의 매칭을 찾아주는 매칭 시스템을 Spring Boot로 구현했습니다. Redis의 Geospatial 인덱스를 도입하고 비동기 이벤트 핸들러를 사용해 가중치 알고리즘의 응답 속도를 200ms 미만으로 제어했습니다.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">Redis Geo</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">RabbitMQ</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2>/ Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <span class="timeline-role">Senior Backend Engineer</span>
+                            <span class="mono" style="color: var(--color-text-muted);">at</span>
+                            <span class="timeline-company">Hexa Platform Inc.</span>
+                        </div>
+                        <span class="timeline-period">2023.05 - Present</span>
+                    </div>
+                    <p class="timeline-desc">
+                        결제 시스템 및 결제 데이터 연동 마이크로서비스 설계, 분산 분산 환경 모니터링 체계 도입(OpenTelemetry, Prometheus), 클라우드 인프라 자원 최적화로 월 비용 25% 감축.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <span class="timeline-role">Backend Developer</span>
+                            <span class="mono" style="color: var(--color-text-muted);">at</span>
+                            <span class="timeline-company">Shift Logistics</span>
+                        </div>
+                        <span class="timeline-period">2020.02 - 2023.04</span>
+                    </div>
+                    <p class="timeline-desc">
+                        물류 데이터 파이프라인 설계 및 배치 잡 최적화, 배차 시스템 API 서버 고도화 및 레거시 데이터 이관 작업 수행.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="contact-links">
+                <a class="mono" href="mailto:00pjmoooo@gmail.com">Email</a>
+                <a class="mono" href="https://github.com/pjmoo" target="_blank">GitHub</a>
+            </div>
+            <div class="copyright">
+                © 2026 Tadashi. All rights reserved.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
